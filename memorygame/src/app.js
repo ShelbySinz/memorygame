@@ -26,9 +26,11 @@ class App extends React.Component {
       if (this.state.clicked.indexOf(id) === -1){
     this.setState({ score: this.state.score + 1, office: office.reverse(), message: "You are on a roll!", clicked: this.state.clicked.concat(id) });
     
+  } else if( this.state.score >= 9){
+    this.setState({ score: 0, message: "You Won!", topScore: this.state.score > this.state.topScore ? this.state.score: this.state.topScore, clicked: [] })
   }
     
-    else{
+    else {
       this.setState({score: 0, message: "You Lost!", topScore: this.state.score > this.state.topScore ? this.state.score: this.state.topScore, clicked: [] })
     }
   
