@@ -10,18 +10,29 @@ import office from "./friends.json"
 
 class App extends React.Component {
  
+  
   state = {
 		office: office,
-		message: "Click one of the logos to begin!",
+		message: "Click a picture to begin!",
 		score: 0,
-		topScore: 0
+    topScore: 0,
+    clicked:  []
   };
+ 
   
-  handleCount = () => {
-    this.setState({ score: this.state.score + 1, office: office.reverse() });
-    
-  }; 
+  handleCount = (id) => {
+  
 
+      if (this.state.clicked.indexOf(id) === -1){
+    this.setState({ score: this.state.score + 1, office: office.reverse(), message: "You are on a roll!", clicked: this.state.clicked.concat(id) });
+    
+  }
+    
+    else{
+      this.setState({score: 0, message: "You Lost!", topScore: this.state.score > this.state.topScore ? this.state.score: this.state.topScore, clicked: [] })
+    }
+  
+  }; 
 
 render(){
   return (
@@ -29,7 +40,7 @@ render(){
    
       <Navbar 
       correct={this.state.score}
-      topscore={this.state.newTopScore}
+      topscore={this.state.topScore}
       message = {this.state.message}
       />
       <Jumbotron />
@@ -38,12 +49,15 @@ render(){
       {this.state.office.map(friend => ( 
 
       <FriendCard
+      id = {friend.id}
       name={friend.name}
       image={friend.image}
       key={friend.id}
       handleCount = {this.handleCount}
+      clicked = {this.state.clicked}
       />
       ))
+      
       }
    
    

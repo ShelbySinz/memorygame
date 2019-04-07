@@ -4,7 +4,8 @@ function FriendCard(props) {
   return (
     <div className="card">
       <div className="img-container" >
-        <img alt={props.name} src={props.image} onClick={props.handleCount} />
+        <img alt={props.name} src={props.image} onClick={() => props.handleCount(props.id)}  />
+      
       </div>
       <div className="content">
         

@@ -15,7 +15,6 @@
     "id": 3,
     "name": "Meredith",
     "image": "images/meradith.jpg"
-    
   },
   {
     "id": 4,
@@ -27,7 +26,6 @@
     "id": 5,
     "name": "Oscar",
     "image": "images/oscar.jpg"
-   
   },
   {
     "id": 6,
@@ -39,6 +37,7 @@
     "id": 7,
     "name": "Kevin",
     "image": "images/kevin.jpg"
+    
    
   },
   {
@@ -46,11 +45,13 @@
     "name": "Stanley",
     "image": "images/stanley.jpg"
     
+    
   },
   {
     "id": 9,
     "name": "Michael",
     "image": "images/scott.jpg"
+    
    
   },
  
@@ -58,12 +59,14 @@
     "id": 10,
     "name": "Kelly",
     "image": "images/kelly.jpg"
+    
    
   },
   {
     "id": 11,
     "name": "Andy",
     "image": "images/andy.jpg"
+   
    
   }
  
