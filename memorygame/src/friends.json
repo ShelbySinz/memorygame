@@ -66,8 +66,20 @@
     "id": 11,
     "name": "Andy",
     "image": "images/andy.jpg"
-   
-   
+  },
+  {
+    "id": 12,
+    "name": "Gabe",
+    "image": "images/gabe.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Wallace",
+    "image": "images/wallace.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Angela",
+    "image": "images/angela.jpg"
   }
- 
 ]
