@@ -5,6 +5,7 @@ import FriendCard from "./components/FriendCard/card"
 import Wrapper from "./components/Wrapper";
 import office from "./friends.json"
 
+
  
 
 
